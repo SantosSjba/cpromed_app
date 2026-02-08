@@ -33,6 +33,11 @@ class Paciente extends Model
         ];
     }
 
+    public function getRouteKeyName(): string
+    {
+        return 'id_paciente';
+    }
+
     public function salidas(): HasMany
     {
         return $this->hasMany(Salida::class, 'id_paciente');

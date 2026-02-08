@@ -41,6 +41,11 @@ class Medicamento extends Model
         ];
     }
 
+    public function getRouteKeyName(): string
+    {
+        return 'id_medicamento';
+    }
+
     public function categoria(): BelongsTo
     {
         return $this->belongsTo(Categoria::class, 'id_categoria');

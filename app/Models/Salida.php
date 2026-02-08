@@ -31,6 +31,11 @@ class Salida extends Model
         ];
     }
 
+    public function getRouteKeyName(): string
+    {
+        return 'id_salida';
+    }
+
     public function paciente(): BelongsTo
     {
         return $this->belongsTo(Paciente::class, 'id_paciente');

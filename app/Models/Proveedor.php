@@ -31,6 +31,11 @@ class Proveedor extends Model
         ];
     }
 
+    public function getRouteKeyName(): string
+    {
+        return 'id_proveedor';
+    }
+
     public function entradas(): HasMany
     {
         return $this->hasMany(Entrada::class, 'id_proveedor');

@@ -35,6 +35,11 @@ class Usuario extends Model
         ];
     }
 
+    public function getRouteKeyName(): string
+    {
+        return 'id_usuario';
+    }
+
     public function getNombreCompletoAttribute(): string
     {
         return trim("{$this->nombres} {$this->apellidos}");

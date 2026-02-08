@@ -28,6 +28,11 @@ class Inventario extends Model
         ];
     }
 
+    public function getRouteKeyName(): string
+    {
+        return 'id_inventario';
+    }
+
     public function detalleInventarios(): HasMany
     {
         return $this->hasMany(DetalleInventario::class, 'id_inventario');

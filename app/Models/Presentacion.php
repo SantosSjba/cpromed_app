@@ -36,6 +36,11 @@ class Presentacion extends Model
         ];
     }
 
+    public function getRouteKeyName(): string
+    {
+        return 'id_presentacion';
+    }
+
     public function medicamento(): BelongsTo
     {
         return $this->belongsTo(Medicamento::class, 'id_medicamento');

@@ -35,6 +35,11 @@ class Lote extends Model
         ];
     }
 
+    public function getRouteKeyName(): string
+    {
+        return 'id_lote';
+    }
+
     public function presentacion(): BelongsTo
     {
         return $this->belongsTo(Presentacion::class, 'id_presentacion');

@@ -7,6 +7,17 @@ const navItems = [
     { label: 'Laboratorios', href: '/laboratorios', route: 'laboratorios.index' },
     { label: 'Secciones', href: '/secciones', route: 'secciones.index' },
     { label: 'Ubicaciones', href: '/ubicaciones', route: 'ubicaciones.index' },
+    { label: 'Medicamentos', href: '/medicamentos', route: 'medicamentos.index' },
+    { label: 'Presentaciones', href: '/presentaciones', route: 'presentaciones.index' },
+    { label: 'Proveedores', href: '/proveedores', route: 'proveedores.index' },
+    { label: 'Pacientes', href: '/pacientes', route: 'pacientes.index' },
+    { label: 'Entradas', href: '/entradas', route: 'entradas.index' },
+    { label: 'Lotes', href: '/lotes', route: 'lotes.index' },
+    { label: 'Salidas', href: '/salidas', route: 'salidas.index' },
+    { label: 'Inventarios', href: '/inventarios', route: 'inventarios.index' },
+    { label: 'Reportes', href: '/reportes', route: 'reportes.index' },
+    { label: 'Usuarios', href: '/usuarios', route: 'usuarios.index' },
+    { label: 'Configuración', href: '/configuracion', route: 'configuracion.index' },
 ];
 
 export default function AppLayout({

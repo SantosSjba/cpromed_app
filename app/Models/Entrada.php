@@ -34,6 +34,11 @@ class Entrada extends Model
         ];
     }
 
+    public function getRouteKeyName(): string
+    {
+        return 'id_entrada';
+    }
+
     public function proveedor(): BelongsTo
     {
         return $this->belongsTo(Proveedor::class, 'id_proveedor');
